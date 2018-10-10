@@ -12,7 +12,8 @@ MONTH_END = 13 # <= December
 API_COUNT = 10000
 DIR_PATH  = os.path.dirname(os.path.realpath(__file__))
 FILE_PATH = os.path.join(DIR_PATH, 'data')
-FILE_NAMES = [os.path.join(FILE_PATH, f'RS_20{year:02}-{month:02}.json1') for year in range(YEAR_START, YEAR_END) for month in range(MONTH_START, MONTH_END)]
+FILE_NAMES = [os.path.join(FILE_PATH, f'RS_20{year:02}-{month:02}.json1') 
+              for year in range(YEAR_START, YEAR_END) for month in range(MONTH_START, MONTH_END)]
 
 def initialise():
     """
